@@ -10,6 +10,7 @@ const Focused = () => {
             <div className='text-center mt-4'>
                 <h1 className='fw-bolder'>The best tutors focused</h1>
                 <h1 className='fw-bolder'>on your success</h1>
+                <Button className='mt-4' variant="outline-danger">CALL: (017)57000000</Button>
             </div>
             <div className='row justify-content-center mt-4'>
                 <div className='px-4 col col-md-6 col-lg-4'>

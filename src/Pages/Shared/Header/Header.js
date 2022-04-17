@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import CustomLink from '../../CustomLink/CustomLink';
+import logo from '../../../image/logo.png'
 const Header = () => {
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container">
+                    <img className='mx-4 mt-2' src={logo} height="50px" alt='' />
                     <CustomLink className="navbar-brand text-uppercase fs-1" to="/">Tutor Ayman Sadik</CustomLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
