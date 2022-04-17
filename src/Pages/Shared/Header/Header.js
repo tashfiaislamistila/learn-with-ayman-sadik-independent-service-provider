@@ -9,9 +9,9 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect expand="lg" sticky="top" bg="primary" variant="dark">
                 <Container>
-                    <img src={logo} height='30px' alt="" srcset="" />
+                    <img className='mx-4' src={logo} height='30px' alt="" srcset="" />
                     <Navbar.Brand as={Link} to="/">
-                        Tutor Ayman Sadik</Navbar.Brand>
+                        Learn with Ayman Sadik</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
