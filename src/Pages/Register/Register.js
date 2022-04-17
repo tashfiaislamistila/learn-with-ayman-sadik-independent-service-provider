@@ -26,7 +26,9 @@ const Register = () => {
 
         createUserWithEmailAndPassword(email, password);
     }
-
+    if (user) {
+        navigate('/home');
+    }
     return (
         <div className='register-form'>
             <h2 className='text-register'>Please Register</h2>
