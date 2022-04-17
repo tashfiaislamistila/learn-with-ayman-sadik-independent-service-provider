@@ -23,10 +23,8 @@ const Banner = () => {
                         className="d-block w-100"
                         src={banner3}
                         alt="Second slide"
-
                     />
                 </Carousel.Item>
-
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -34,7 +32,6 @@ const Banner = () => {
                         alt="Third slide"
                     />
                 </Carousel.Item>
-
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -42,7 +39,6 @@ const Banner = () => {
                         alt="Third slide"
                     />
                 </Carousel.Item>
-
             </Carousel>
         </div>
     );
