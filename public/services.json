@@ -1,0 +1,44 @@
+[
+    {
+        "id": "",
+        "price": "$143",
+        "name": "English",
+        "image": "https://i.ibb.co/n61Tdyx/english.jpg",
+        "Description": "Learn all the essential language skills speaking, listening, reading, writing and grammar with an experienced, professional teacher. Small classes give you lots of opportunity for conversation and time to ask questions. Study and practice English every day, and have fun doing it! (15 hours/week)"
+    },
+    {
+        "id": "2",
+        "price": "$191",
+        "name": "Maths",
+        "image": "https://ibb.co/qJCXftk",
+        "Description": "Explore Lecture with me a Unique Online Math Enrichment Platform. Topics cover puzzles, number theory, algebra, and lots more. Join Online or you can attend class in parson. Both services are available."
+    },
+    {
+        "id": "3",
+        "price": "$261",
+        "name": "ICT",
+        "image": "https://ibb.co/Z8rmTmW",
+        "Description": "Information and Communications Technology (ICT) is technology that is used to handle communications processes such as telecommunications, broadcast media, intelligent building management systems, audiovisual processing and transmission systems, and network-based control and monitoring functions."
+    },
+    {
+        "id": "4",
+        "price": "$400",
+        "name": "Digital Marketing",
+        "image": "https://ibb.co/mSTfv7X",
+        "Description": "Learn hands on strategy and campaign development with one on one expert mentor support. Attain an understanding of different digital marketing channels and use them in campaigns. View Our Courses."
+    },
+    {
+        "id": "5",
+        "price": "$450",
+        "name": "Freelancing",
+        "image": "https://ibb.co/db6VfRs",
+        "Description": " Being freelance, or self-employed, means that rather than signing a contract to work for one company, you work for yourself and manage your own tax affairs. This gives you the freedom to work for whoever you like, as much or as little as you want. You're flexible and the ruler of your own destiny."
+    },
+    {
+        "id": "6",
+        "price": "$350",
+        "name": "Graphic Design",
+        "image": "https://ibb.co/QpT4kPK",
+        "Description": "As a designer, you'll need to learn the basics of the Adobe Creative Cloud (Illustrator, InDesign, photoshop) and Sketch to learn how to work with them together to create everything from a logo to a poster or a book. By mastering the essential design programs, you'll be able to tackle client briefs with ease"
+    }
+]
