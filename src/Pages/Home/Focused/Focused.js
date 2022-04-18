@@ -6,7 +6,7 @@ import homework from '../../../image/homework.png'
 
 const Focused = () => {
     return (
-        <div id='focused' className='container'>
+        <div id='focused' >
             <div className='text-center mt-4'>
                 <h1 className='fw-bolder'>The best tutors focused</h1>
                 <h1 className='fw-bolder'>on your success</h1>

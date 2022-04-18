@@ -73,7 +73,7 @@ const Login = () => {
                 </Button>
             </Form>
             {errorElement}
-            <p className='mt-4'>New to Lear with Ayman Sadik?
+            <p className='mt-4'>New to Learn with Ayman Sadik?
                 <Link to='/register' className='text-danger mx-2 pe-auto text-decoration-none' onClick={navigateRegister}>Please Register </Link></p>
             <p >Forget Password?
                 <button className='text-primary mx-2 pe-auto text-decoration-none btn btn-link' onClick={resetPassword}>Reset Password</button></p>

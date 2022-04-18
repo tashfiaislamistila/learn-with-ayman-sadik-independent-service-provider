@@ -3,7 +3,7 @@ import './App.css';
 import About from './Pages/About/About';
 import Blog from './Pages/Blog/Blog';
 import CheckOut from './Pages/CheckOut/CheckOut/CheckOut';
-import CheckoutDetail from './Pages/CheckoutDetail/CheckoutDetail';
+import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
@@ -16,7 +16,7 @@ import Header from './Pages/Shared/Header/Header';
 
 function App() {
   return (
-    <div >
+    <div className='container'>
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
@@ -25,7 +25,7 @@ function App() {
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
-        <Route path="/service/:serviceId" element={<CheckoutDetail></CheckoutDetail>}></Route>
+        <Route path="/service/:serviceId" element={<ServiceDetail></ServiceDetail>}></Route>
         <Route path="/checkout" element={
           <RequiredAuth>
             <CheckOut></CheckOut>
