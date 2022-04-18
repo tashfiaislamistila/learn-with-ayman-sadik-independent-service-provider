@@ -15,6 +15,7 @@ https://independent-service-prov-438c6.web.app/
 * If you are first time in the website you should registration first.
 * When to tried to registration you get a mail for verification, you should click the link and verified your email.
 * After registration if you forget your password if you click the reset password you will get another mail for reset password.
+* In this web site you can register by email/password,google and github.
 * In this website I use css,bootstrap,react bootstrap,react,react router,react router hook,firebase authentication,image bb,json generator.
 ### `npm start`
 
