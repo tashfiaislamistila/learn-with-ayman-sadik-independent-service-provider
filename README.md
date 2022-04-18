@@ -1,11 +1,21 @@
-# Getting Started with Create React App
+# Project Name
+Learn with Ayman Sadik.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project live site
 
-## Available Scripts
+https://independent-service-prov-438c6.web.app/
 
-In the project directory, you can run:
-
+# Project Description
+* This is a independent service provider project 
+* There is a navbar in my project which contain 6 option.
+* If you click the first option it is home page which is the main page of my website.
+* If you click the courses option you can see the course and in the bottom of course description you can see the button,if you click the button you go another route where is the details of all packages course.
+* In the bottom of package detail there is a button if you click the button it is goes to another route which is the checkout route.
+* If you want to purchase the course you should login in, after login you can purchase the course.
+* If you are first time in the website you should registration first.
+* When to tried to registration you get a mail for verification, you should click the link and verified your email.
+* After registration if you forget your password if you click the reset password you will get another mail for reset password.
+* In this website I use css,bootstrap,react bootstrap,react,react router,react router hook,firebase authentication,image bb,json generator.
 ### `npm start`
 
 Runs the app in the development mode.\

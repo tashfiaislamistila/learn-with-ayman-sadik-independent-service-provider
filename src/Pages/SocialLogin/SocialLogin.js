@@ -15,7 +15,7 @@ const SocialLogin = () => {
 
     const navigate = useNavigate();
     let errorElement;
-    if (user) {
+    if (user || user1) {
         navigate(from, { replace: true });
     }
     if (loading || loading1) {
@@ -24,9 +24,9 @@ const SocialLogin = () => {
     if (error || error1) {
         errorElement = <p className='text-danger'>Error: {error?.message} {error1?.message}</p>
     }
-    if (user || user1) {
-        navigate('/home');
-    }
+    // if (user || user1) {
+    //     navigate('/home');
+    // }
     return (
         <div>
             <div className='d-flex align-items-center'>
