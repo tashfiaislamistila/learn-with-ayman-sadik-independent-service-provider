@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Register.css'
 import auth from '../../firebase.init';
@@ -6,7 +6,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
-
+    const [agree, setAgree] = useState(false);
     const [
         createUserWithEmailAndPassword,
         user,
@@ -24,8 +24,11 @@ const Register = () => {
         const email = event.target.email.value;
         const password = event.target.password.value;
         const name = event.target.name.value;
+        // const agree = event.target.terms.checked;
 
-        createUserWithEmailAndPassword(email, password);
+        if (agree) {
+            createUserWithEmailAndPassword(email, password);
+        }
     }
     if (user) {
         navigate('/home');
@@ -39,8 +42,8 @@ const Register = () => {
                 <input type="email" name="email" id="" placeholder='Your Email' required />
 
                 <input type="password" name="password" id="" placeholder='Your Password' required />
-                <input type="checkbox" name="terms" id="terms" />
-                <label className='mx-2' htmlFor='terms'>Accept Learn with Ayman Sadik terms and conditions</label>
+                <input className='mx-2' onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
+                <label className={agree ? 'text-primary' : 'text-danger'} htmlFor='terms'>Accept Learn with Ayman Sadik terms and conditions</label>
                 <input className='w-50 mx-auto btn btn-primary mt-2' type="submit" value="Register" />
             </form>
             <p className='mt-4'>Already have an Account?
