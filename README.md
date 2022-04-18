@@ -1,4 +1,4 @@
-# Project Name
+## Project name
 Learn with Ayman Sadik.
 
 ## Project live site
