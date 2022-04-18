@@ -11,6 +11,7 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
+    let errorElement;
 
     const [
         signInWithEmailAndPassword,
@@ -22,7 +23,9 @@ const Login = () => {
     if (user) {
         navigate(from, { replace: true });
     }
-
+    if (error) {
+        errorElement = <p className='text-danger'>Error: {error?.message} </p>
+    }
     const handleSubmit = event => {
         event.preventDefault();
         const email = emailRef.current.value;
@@ -32,6 +35,9 @@ const Login = () => {
     }
     const navigateRegister = event => {
         navigate('/register');
+    }
+    const resetPassword = () => {
+
     }
     return (
         <div className='container w-50 mx-auto'>
@@ -45,15 +51,15 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
+                <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
+                    Login
                 </Button>
             </Form>
+            {errorElement}
             <p className='mt-4'>New to Lear with Ayman Sadik?
                 <Link to='/register' className='text-danger mx-2 pe-auto text-decoration-none' onClick={navigateRegister}>Please Register </Link></p>
+            <p >Forget Password?
+                <Link to='/register' className='text-danger mx-2 pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</Link></p>
             <SocialLogin></SocialLogin>
         </div>
     );
