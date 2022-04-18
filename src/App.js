@@ -9,7 +9,6 @@ import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
 import Register from './Pages/Register/Register';
 import RequiredAuth from './Pages/RequiredAuth/RequiredAuth';
-import Reviews from './Pages/Reviews/Reviews';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 
