@@ -1,6 +1,7 @@
+import { async } from '@firebase/util';
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -20,6 +21,8 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
     if (user) {
         navigate(from, { replace: true });
     }
@@ -36,8 +39,10 @@ const Login = () => {
     const navigateRegister = event => {
         navigate('/register');
     }
-    const resetPassword = () => {
-
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
+        await sendPasswordResetEmail(email);
+        alert('Sent email');
     }
     return (
         <div className='container w-50 mx-auto'>
@@ -59,7 +64,7 @@ const Login = () => {
             <p className='mt-4'>New to Lear with Ayman Sadik?
                 <Link to='/register' className='text-danger mx-2 pe-auto text-decoration-none' onClick={navigateRegister}>Please Register </Link></p>
             <p >Forget Password?
-                <Link to='/register' className='text-danger mx-2 pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</Link></p>
+                <Link to='/register' className='text-primary mx-2 pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</Link></p>
             <SocialLogin></SocialLogin>
         </div>
     );
